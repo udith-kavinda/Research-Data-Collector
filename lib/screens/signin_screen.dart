@@ -50,19 +50,6 @@ class _SignInScreenState extends State<SignInScreen> {
                 SizedBox(
                   height: 30,
                 ),
-                // logInSignInButton(context, false, (){
-                //   FirebaseAuth.instance.createUserWithEmailAndPassword(
-                //       email: _emailTextcontroller.text,
-                //       password: _passwordController.text
-                //   ).then((value) {
-                //
-                //     print("Created new user");
-                //     Navigator.push(context, MaterialPageRoute(builder: (context) => ProjectScreen()));
-                //   }).onError((error, stackTrace) {
-                //     print("Error ${error.toString()}");
-                //   });
-                // }),
-
                 logInSignInButton(context, false, (){
                   FirebaseAuth.instance.createUserWithEmailAndPassword(
                       email: _emailTextcontroller.text,
